@@ -9,7 +9,6 @@ do--//Init
 end
 
 do --//Checks&Functions
-	end
 	if Library.Network.Invoke('Get my Banks')[_G.BankIndex] == nil then
 		_G.AutoWithdraw = false
 	else
@@ -79,14 +78,13 @@ do--//AutoEnch
 				repeat
 					if not Library.Functions.CompareTable(_G.Wanted, PetToValidTable(GetPetInfo(v.uid).powers)) and not HasPower and not _G.Stop then
 						if #GetPetInfo(v.uid).powers > 1 then
-                            print("-")
 						else
 							table.foreach(GetPetInfo(v.uid).powers, function(_, __)
-
 							end)
 						end
 						Library.Network.Invoke("Enchant Pet", v.uid)
 					else
+						local printwith = rconsolewarn or warn
 						HasPower = true
 					end
 					if Library.Save.Get().Diamonds < 500000 and _G.Stop ~= true and _G.AutoWithdraw then
