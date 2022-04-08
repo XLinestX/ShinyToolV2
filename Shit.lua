@@ -76,30 +76,6 @@ do--//AutoEnch
 			local startTime = tick()
 			spawn(function()
 				repeat
-					if not Library.Functions.CompareTable(_G.Wanted, PetToValidTable(GetPetInfo(v.uid).powers)) and not HasPower and not _G.Stop then
-						if #GetPetInfo(v.uid).powers > 1 then
-							warn('Pet: ' .. v.nk .. '(' .. v.uid .. ')')
-							warn("      ", GetPetInfo(v.uid).powers[1][1], Functions.ToRomanNum(GetPetInfo(v.uid).powers[1][2]))
-							warn("      ", GetPetInfo(v.uid).powers[2][1], Functions.ToRomanNum(GetPetInfo(v.uid).powers[2][2]) .. "\n------------")
-						else
-							table.foreach(GetPetInfo(v.uid).powers, function(_, __)
-								warn('Pet: ' .. v.nk .. '(' .. v.uid .. ')')
-								warn("      ", __[1], Functions.ToRomanNum(__[2]) .. "\n------------")
-							end)
-						end
-						Library.Network.Invoke("Enchant Pet", v.uid)
-					else
-						HasPower = true
-					end
-					if Library.Save.Get().Diamonds < 500000 and _G.Stop ~= true and _G.AutoWithdraw then
-						Library.Network.Invoke('Bank withdraw', BUID, (function()
-							if (1000000000000 - BankInfo.Storage.Currency.Diamonds) > 25000000000 then
-								return (25000000000 - Library.Save.Get().Diamonds)
-							else
-								return (1000000000000 - BankInfo.Storage.Currency.Diamonds)
-							end
-						end))
-					end
 					task.wait()
 				until HasPower == true or _G.Stop
 			end)
