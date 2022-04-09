@@ -10478,7 +10478,7 @@ end
 
 if game.PlaceId == 7788040584 then
     --Magnet Simulator 2
-    loadstring("https://raw.githubusercontent.com/XLinestX/ShinyToolV2/main/PL.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolV2/main/PL.lua"))()
 end
 
 
