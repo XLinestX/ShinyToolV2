@@ -10467,7 +10467,7 @@ end
 -------------------------------------
 if game.PlaceId == 6284583030 then
     --Pet Simulator X
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolSupported/main/ShinyTool.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolV2/main/PSX.lua"))()
 end
 -------------------------------------
 if game.PlaceId == 8592863835 then
