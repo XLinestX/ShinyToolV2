@@ -10477,16 +10477,20 @@ end
 
 
 if game.PlaceId == 7788040584 then
-    --Magnet Simulator 2
+    --Pls donate me
     loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolV2/main/PL.lua"))()
 end
 
 
 if game.PlaceId == 286090429 then
-    --Magnet Simulator 2
+    --Arsenal
     loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolV2/main/ARS.lua"))()
 end
 
+if game.PlaceId == 3101667897 then
+    --Legends of Speed
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolV2/main/LFS.lua"))()
+end
 
 
 
