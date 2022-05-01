@@ -10491,7 +10491,10 @@ if game.PlaceId == 3101667897 then
     --Legends of Speed
     loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolV2/main/LFS.lua"))()
 end
-
+if game.PlaceId == 9300407930 then
+    --Bot Clash
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolV2/main/BT.lua"))()
+end
 
 
 
