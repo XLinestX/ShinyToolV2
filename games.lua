@@ -10495,6 +10495,10 @@ if game.PlaceId == 9300407930 then
     --Bot Clash
     loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolV2/main/BT.lua"))()
 end
+if game.PlaceId == 6769764667 then
+    --Factory Simulator
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolV2/main/FactorySimulator.lua"))()
+end
 
 
 
