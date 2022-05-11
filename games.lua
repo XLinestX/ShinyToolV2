@@ -10499,6 +10499,11 @@ if game.PlaceId == 6769764667 then
     --Factory Simulator
     loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolV2/main/FactorySimulator.lua"))()
 end
+if game.PlaceId == 8549047195 then
+    --Anime Warriors Simulator
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolV2/main/AWS.lua"))()
+end
+
 
 
 
