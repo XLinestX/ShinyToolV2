@@ -10503,12 +10503,10 @@ if game.PlaceId == 8549047195 then
     --Anime Warriors Simulator
     loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolV2/main/AWS.lua"))()
 end
-
-
-
-
-
-
+if game.PlaceId == 9281034297 then
+    --Goal Kick Simulator
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolV2/main/GoalKickSimulator.lua"))()
+end
 
 
 
