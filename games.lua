@@ -10507,7 +10507,10 @@ if game.PlaceId == 9281034297 then
     --Goal Kick Simulator
     loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolV2/main/GoalKickSimulator.lua"))()
 end
-
+if game.PlaceId == 8750997647 then
+    --Tapping Legends X
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolV2/main/TappingLegendsX.lua"))()
+end
 
 
 
